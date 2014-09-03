@@ -13,9 +13,9 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        NSHost *first = [NSHost currentHost];
+        NSString *name = [first localizedName];
+        NSLog(@"Hi! My name is %@", name);
     }
     return 0;
 }
